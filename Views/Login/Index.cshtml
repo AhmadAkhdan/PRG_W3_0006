@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_LoginLayout";   // pakai layout khusus login
+    ViewData["Title"] = "Login";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg" style="width: 400px;">
+        <div class="card-header text-center bg-black text-white">
+            <h3 class="mb-0">Login</h3>
+        </div>
+        <div class="card-body">
+            <p class="text-center">Silakan login untuk masuk</p>
+
+            <form method="post" asp-controller="Login" asp-action="Index">
+                <div class="form-group mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required />
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" name="password" class="form-control" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+        <div class="card-footer text-center">
+            <small>© 2025 MyApp</small>
+        </div>
+    </div>
+</div>
