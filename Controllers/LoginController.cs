@@ -11,7 +11,7 @@ public class LoginController : Controller
     public IActionResult Index(string email, string password)
     {
         // contoh sederhana validasi
-        if (email == "admin@example.com" && password == "12345")
+        if (email == "akhdan@gmail.com" && password == "12345")
         {
             // kalau login sukses, redirect ke dashboard
             return RedirectToAction("Index", "Dashboard");
